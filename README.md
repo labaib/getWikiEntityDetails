@@ -11,7 +11,7 @@ Funzione per l'ottenimento di informazioni su un'entità tramite API Wikidata
 jsDelivr serve automaticamente i file GitHub con il tipo MIME `application/javascript`, l'URL segue il formato `https://cdn.jsdelivr.net/gh/<user>/<repo>@<branch>/<file>`
 
 ```
-import { searchWikiEntitiesByLabel } from 'https://cdn.jsdelivr.net/gh/labaib/getWikiEntityDetails@main/index.js';
+import { getWikiEntityDetails } from 'https://cdn.jsdelivr.net/gh/labaib/getWikiEntityDetails@main/index.js';
 ```
 
 > Pro: aggiornamento automatico; Contro: pagina carica più lentamente 
