@@ -1,11 +1,23 @@
+/**
+* Ottieni dettaglio elemento Wikidata
+* @param {string} endpoint - Istanza wiki ["www.wikidata.org"]
+* @param {string} itemId - ID Elemento Wikidata nel formato "Q123"
+* @returns {Object|null} - Ritorna un oggetto oppure null 
+*/
+
 const getWikiEntityDetails = async (endpoint, itemId) => {
 
-  const url = `https://${endpoint}/wiki/Special:EntityData/${itemId}.json`;
-  const response = await fetch(url, { credentials: "include" });
-  const json = await response.json();
-  const data = json.entities
-
-  return data
+  try {
+    
+    const url = `https://${endpoint}/wiki/Special:EntityData/${itemId}.json`;
+    const response = await fetch(url);
+    const json = await response.json();
+    const data = Object.values(json.entities)[0]
+    return data
+  
+  } catch { 
+    return null; 
+  }
 
 }
 
