@@ -1,2 +1,2 @@
 # getWikiEntityInfo
-Funzione per l'ottenimento di informazioni su una entità tramite API Wikidata
+Funzione per l'ottenimento di informazioni su un'entità tramite API Wikidata
