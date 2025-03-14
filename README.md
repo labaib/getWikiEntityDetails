@@ -34,7 +34,7 @@ import { getWikiEntityDetails } from './js/getWikiEntityDetails.js';
  import { getWikiEntityDetails } from 'https://cdn.jsdelivr.net/gh/labaib/getWikiEntityDetails@main/index.js';
 
  (async () => {
-     const entity = await getWikiEntityDetails("www.wikidata.org", "Q1067");
+     const entity = await getWikiEntityDetails("Q1067");
  })();
 
 </script>
@@ -45,7 +45,7 @@ import { getWikiEntityDetails } from './js/getWikiEntityDetails.js';
   import { getWikiEntityDetails } from './js/getWikiEntityDetails.js';
 
   (async () => {
-    const entity = await getWikiEntityDetails("www.wikidata.org", "Q1067");
+    const entity = await getWikiEntityDetails("Q1067");
   })();
 
 </script>

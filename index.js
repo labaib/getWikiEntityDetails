@@ -1,11 +1,11 @@
 /**
 * Ottieni dettaglio elemento Wikidata
-* @param {string} endpoint - Istanza wiki ["www.wikidata.org"]
 * @param {string} itemId - ID Elemento Wikidata nel formato "Q123"
+* @param {string} [endpoint="www.wikidata.org"] - opzionale
 * @returns {Object|null} - Ritorna un oggetto oppure null 
 */
 
-const getWikiEntityDetails = async (endpoint, itemId) => {
+const getWikiEntityDetails = async (itemId, endpoint = "www.wikidata.org") => {
 
   try {
     
